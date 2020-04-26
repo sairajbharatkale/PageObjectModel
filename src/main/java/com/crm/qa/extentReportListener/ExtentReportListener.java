@@ -1,3 +1,11 @@
+/*This you will need in Jenkins -> Manage Jenkins -> Script console -> 
+ * System.clearProperty("hudson.model.DirectoryBrowserSupport.CSP");
+
+System.setProperty("hudson.model.DirectoryBrowserSupport.CSP", "sandbox allow-scripts; default-src 'self'; script-src * 'unsafe-eval'; img-src *; style-src * 'unsafe-inline'; font-src *");
+Ru this 2 command sin script console to view the html report in proper format 
+ */
+
+
 package com.crm.qa.extentReportListener;
 
 import java.io.File;
